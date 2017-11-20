@@ -1,0 +1,28 @@
+--create sonardemo
+--copy sonarqube6.2 and 2.8
+
+goto--
+D:\DevOpDemo\SonarDemo\sonarqube-6.2\sonarqube-6.2\bin\windows-x86-64
+startsonar---start server
+end sonar
+################
+
+localhost:9000
+
+####################
+open cmd
+cd to path of .java file
+cd D:\DevOpDemo\SonarDemo\MyJavaDemos
+then type path of sonar-scanner.bat file
+D:\DevOpDemo\SonarDemo\sonarqube-6.2\sonar-scanner-2.8\bin\sonar-scanner.bat
+##########
+
+open localhost:9000
+
+
+
+
+
+
+
+                                                                                                                                            
