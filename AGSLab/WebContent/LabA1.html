@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>jQuery-HelloWorld</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var a='<h3>States</h3><ol type="1">';
+	var table=$("#region tbody");
+	table.find("tr").each(function(){
+		var x=$(this).find("td");
+		a+="<li>"+$(x).eq(0).text()+"</li>";
+	});
+	a+='</ol>';
+	document.getElementById("StatesDiv").innerHTML=a;
+	
+	var y=$("#region tbody tr");
+	var z=y.last().find("td").eq(1).text();
+	document.getElementById("CapitalDiv").innerHTML="<h3>Fourth State Capital is : "+z+"</h3>";
+});
+</script>
+</head>
+<body>
+<table id="region" border="2" bordercolor="black">
+<thead>
+<tr>
+<th>State</th>
+<th>Capital</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andhrapradesh</td>
+<td>Hyderabad</td>
+</tr>
+<tr>
+<td>Karnataka</td>
+<td>Bangalore</td>
+</tr>
+<tr>
+<td>Maharashtra</td>
+<td>Mumbai</td>
+</tr>
+<tr>
+<td>Tamilnadu</td>
+<td>Chennai</td>
+</tr>
+</tbody>
+</table>
+<div id="StatesDiv"></div>
+<div id="CapitalDiv"></div>
+</body>
+</html>

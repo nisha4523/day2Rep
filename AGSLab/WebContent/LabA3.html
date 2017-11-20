@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>jQuery-HelloWorld</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(":button").click(function(){
+			$("a").attr("href","https://www.bing.com");	
+			$(":button").attr("disabled",true);
+	});
+});
+</script>
+</head>
+<body>
+<h2>Click on the Button 'Change URL' to change the target URL of the Hyperlink</h2>
+<a href="http://www.google.com">Search Site</a><br><br>n
+<input type="button" id="btn" value="Change URL"/>
+<p>URL Changed from  http://www.google.com to http://www.bing.com</p>
+</body>
+</html>

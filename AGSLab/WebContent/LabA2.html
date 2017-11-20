@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>jQuery-HelloWorld</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+var mainframe=$(".mainframe");
+$(".mainframe").remove();
+$(".dotnet").prepend(mainframe);
+});
+</script>
+</head>
+<body>
+<div>
+<ul class="ilearn_menu">
+<li class="dotnet">Dotnet Technologies
+<ul>
+<li>CSHARP</li>
+<li>ASP.NET</li>
+</ul>
+</li>
+<li class="jee">JEE Technologies
+<ul>
+<li>RMI</li>
+<li>Servlet</li>
+</ul>
+</li>
+<li class="mainframe">Mainframe Technologies
+<ul>
+<li>JCL</li>
+<li>COBOL</li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+</html>
