@@ -1,0 +1,2 @@
+2017-10-24 11:52:20,429 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [NewFile.xml]
+2017-10-24 11:53:03,914 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [NewFile.xml]

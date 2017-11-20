@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+		<bean id="sbuimpl" class="com.cg.details.SBUImpl">
+	<property name="sbuId" value="123" />
+	<property name="sbuName" value="Product Engineering Services" />
+	<property name="sbuHead" value="Kiran Rao" />
+		<property name="empList">
+			<list>
+				<ref bean="empBean" />
+				<ref bean="empBean1" />
+			</list>
+		</property>
+	</bean>
+	<bean id="empBean" class="com.cg.details.EmployeeImpl">
+		<property name="id" value="12345" />
+		<property name="name" value="Harriet" />
+		<property name="salary" value="40000.0" />
+	</bean>
+	<bean id="empBean1" class="com.cg.details.EmployeeImpl">
+		<property name="id" value="12346" />
+		<property name="name" value="harry" />
+		<property name="salary" value="30000.0" />
+	</bean>
+</beans>
